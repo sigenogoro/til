@@ -6,10 +6,11 @@ git diff stash@{0}
 
 ## mergeしたけど、コンフリクトなどがあって、マージ前に戻したい
 
-```command
+```bash
 
-<!-- 基本 -->
+# 基本
 git merge --abort
 
-git 
+# コンフリクトを解消しようとして、編集したが戻したい
+git merge --abort HEAD
 ```

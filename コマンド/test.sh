@@ -46,3 +46,20 @@
 # colors+=(green mod)
 # echo ${colors[@]}
 
+# echo $((5 + 2))
+
+# n=5
+# ((n=n+5))
+# echo $n
+
+# echo $((10/6))
+
+read -p "Name? " name
+if [ "$name" = "komachi" ]
+then
+    echo "welocme"
+elif [ "$name" == "fukuro" ]; then
+    echo "welcome too"
+else
+    echo "you are not allowed"
+fi

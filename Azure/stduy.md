@@ -233,13 +233,6 @@ Azure の場合、最低 3 つの個別の可用性ゾーン
 - Azure Virtual Network リソースを保護するクラウドベースのマネージドネットワーク セキュリティサービス
 - Azure Storage プラットフォームには、次のデータ サービスが含まれています。
 
-- [Azure BLOB](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-blobs-introduction) ：
-- [Azure Files](https://docs.microsoft.com/ja-jp/azure/storage/files/storage-files-introduction):
-- [Azure キュー](https://docs.microsoft.com/ja-jp/azure/storage/queues/storage-queues-introduction):
-- [Azure テーブル](https://docs.microsoft.com/ja-jp/azure/storage/tables/table-storage-overview):
-- [Azure ディスク](https://docs.microsoft.com/ja-jp/azure/virtual-machines/managed-disks-overview):
-
-
 
 ### ネットワークセキュリティグループ（NSG)
 
@@ -410,3 +403,13 @@ Azureネットワーク全体のユーザーアクティビティを監視する
 - Azure のデプロイおよび管理サービス
 
 ### Azure Storage
+- Azure のストレージサービス
+- PaaS化に該当する
+- Azure BLOB
+  - オブジェクトストレージであり、データは「オブジェクト」と呼ばれる単位で保管され、HTTP/HTTPS経由でアクセスすることができます。
+- Azure Files
+  - ファイルストレージであり、SMBプロトコルに対応しているのでファイルシステムとしてマウントすることができます。
+- Azure Queue storage
+  - メッセージストレージであり、システムを疎結合にするためのメッセージ指向ミドルウェアとして利用することができます。
+- Azure Table storage
+  - NoSQLデータベースであり、事前にデータ構造を定義することなくデータを読み書きすることができます。

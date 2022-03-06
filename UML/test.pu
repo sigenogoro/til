@@ -1,0 +1,7 @@
+@startuml
+
+interface Aggregate {
+  iterator()
+}
+
+@enduml

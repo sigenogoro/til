@@ -1,18 +1,27 @@
 @startuml
-|社員|
-start
-:出張先への経路を確認する;
-:交通費の精算書を作成する;
-:経理部に精算書を提出する;
-|#AntiqueWhite|経理部|
-:精算書を確認する;
-:精算書を承認者に提出する;
-|承認者|
-:精算書を承認する;
-:経理部に戻す;
-|経理部|
-:現金を用意して、渡す;
-|社員|
-:精算金を受け取る;
-stop
+
+object main
+
+interface Print {
+    ---
+    {abstract} PrintWeak
+    {abstract} printStrong
+}
+
+class Banner {
+    - string: String
+    ---
+    showWithParen
+    showWithAster
+}
+
+class PrintBanner extends Banner implements Print {
+    ---
+    PrintWeak
+    printStrong
+}
+
+main --> Print
+
+
 @enduml

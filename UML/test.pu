@@ -1,27 +1,12 @@
 @startuml
 
-object main
-
-interface Print {
-    ---
-    {abstract} PrintWeak
-    {abstract} printStrong
+class ClassA {
+    A : Int
+    B : String
+    C : Boolean
+    + methodA(): Void
+    - methodB(B, C): Boolean
 }
-
-class Banner {
-    - string: String
-    ---
-    showWithParen
-    showWithAster
-}
-
-class PrintBanner extends Banner implements Print {
-    ---
-    PrintWeak
-    printStrong
-}
-
-main --> Print
 
 
 @enduml
